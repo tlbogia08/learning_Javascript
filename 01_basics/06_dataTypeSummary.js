@@ -58,3 +58,28 @@ console.log(typeof myObj)
 console.log(typeof myFunction)
 console.log(typeof heros)
 console.log(typeof id)
+
+
+
+// ****************** Memory IN Javascript *************************************************
+
+// Stack(Primitive), Heap (Non Primitive) 
+let myEmailLink = "www.buddhuprogrammer@gmail.com";
+
+let anotherName = myEmailLink;
+anotherName = "rudrasharma@gmail.com"
+
+console.log(anotherName);
+console.log(myEmailLink);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@axl",
+}
+
+let userTwo = userOne;
+userTwo.email = "rudra@google.com";
+
+console.log(userOne);
+console.log(userTwo);
+
